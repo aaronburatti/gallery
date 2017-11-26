@@ -8,19 +8,23 @@
                 <small>Subheading</small>
 
                 <?php
-                //
-                //
+
+
                 // $result_set = User::find_all_users();
                 // while($row = mysqli_fetch_array($result_set)){
                 //
                 //   echo $row['id'];
                 // }
 
-                $found =  User:: find_user_id(1);
-                $user = User::instantiation($found);
+                // $found =  User:: find_user_id(1);
+                // $user = User::instantiation($found);
+                //
+                //
+                // echo $user->id;
 
 
-                echo $user->id;
+                $users = User::find_user_id(1);
+                echo $users->username;
 
 
                  ?>
